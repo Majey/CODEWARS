@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+  const OddEven = (number) => {
+    num = 0;
+    for(let i= 0; i < number.length; i++ ){
+      num += number[i];      
+    }
+    num%2 === 0? console.log("Even"): console.log("Odd");
+  }
+
+  OddEven([1,2,4,1,1]);
+
+// function arraysSimilar(arr1, arr2) {
+//   let ar1 = 0
+//   let ar2 = 0
+  
+//   for(let i=0; i<arr1.length; i++){
+//     ar1 += arr1[i]
+//   }
+//   for(let b=0; b<arr2.length; b++){
+//     ar2 += arr2[b]
+//   }
+  
+//   if(ar1 === ar2){
+//     return true
+//   }else{
+//     return false
+//   }
+// }
+
+// console.log(arraysSimilar(["a","r","r",2], ["a","r","r",2]))
+
+
+    // function solve(a,b){
+    //     let arr = [];
+    //     for (var i = 0; i < a.length; i++){
+    //         if (!(b.includes(a[i]))){
+    //         arr.push(a[i])
+    //         }
+    //     }
+    //     for (var i = 0; i < b.length; i++){
+    //         if (!(a.includes(b[i]))){
+    //             arr.push(b[i])
+    //         }
+    //     }
+    //     arr.join("")
+
+    //     return arr[0]
+    // }
+
+    // const solve = (a,b) => (a + b).split('').filter(x => a.includes(x) ^ b.includes(x)).join('')[0];
+
+    // console.log(solve(["s","r","y","i","q"], ["d", "w","r","y"]))
+
+// function solve(a,b) {
+//   let setA = new Set(a);
+//   let setB = new Set(b);
+//   return [...(a+b)].filter(c => setA.has(c) ^ setB.has(c)).join("");
+// };
+
+
+// function addArrays(array1, array2) {
+//   if(array1.length != array2.length) throw new Error();
+//   return array1.map((a,i) => a + array2[i]);
+// }
+
+
+
+
+    // lowestToHighest = (n) => n.sort((a, b) => b - a);
+
+    // lowestToHighest([1,2,3,4,5,6,7])
+
+
+        // Sort an array of numbers 
+    // let numbers = [5, 13, 1, 44, 32, 15, 500]
+
+    // Lowest to highest
+    // let lowestToHighest = numbers.sort((a, b) => a - b);
+    //Output: [1,5,13,15,32,44,500]
+</script>
+</html>
